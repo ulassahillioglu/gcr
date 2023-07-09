@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Facebook Post Link Extractor</title>
+    <link rel="stylesheet" type="text/css" href="/static/styles.css">
+    <!-- <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to bottom right, white, cyan);
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+
+        form {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        input[type="text"] {
+            width: 300px;
+            padding: 10px;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        .submit-button {
+            margin-top: 10px;
+        }
+
+        a {
+            color: #007bff;
+            text-decoration: none;
+        }
+    </style> -->
+</head>
+<body>
+    <h1>Facebook Post Link Extractor</h1>
+    <form action="/" method="post">
+        <input type="text" name="url" placeholder="Enter Facebook post URL" required>
+        <br>
+        <input class="submit-button" type="submit" value="Get Post Link">
+    </form>
+    {% if result %}
+        <p>Result: <a href="{{ result }}" target="_blank">{{ result }}</a></p>
+    {% endif %}
+</body>
+</html>

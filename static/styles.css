@@ -1,0 +1,131 @@
+/* styles.css */
+
+@import url("https://fonts.googleapis.com/css?family=Sofia");
+@import url("https://fonts.googleapis.com/css?family=Audiowide");
+body {
+  /* background: url("/static/images/1.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat; */
+  /* background-color: #db20db76; */
+  background: radial-gradient(circle,white,#1a03eb70,rgba(80, 221, 214, 0.473),#df791bd8);
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 800px;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #32115c;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.4);
+  align-items: center;
+}
+
+h1 {
+  font-size: 42px;
+  color: plymouth blue;
+  text-align: center;
+  margin-bottom: 20px;
+  text-decoration: underline ;
+  font-family: 'Audiowide', sans-serif;
+}
+
+p {
+  font-size: 16px;
+  color: #e0281b;
+  text-align: center;
+  
+
+}
+
+a {
+  text-decoration: none;
+  color: #110ec2;
+  font-weight: bold;
+  text-shadow: 12px 2px 12px #3f1b1a;
+}
+
+form {
+  width: 300px;
+  max-width: 500px;
+  padding: 10px;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.4);
+  text-align: center;
+  font-size: 16px;
+  margin-top: 20px;
+}
+
+input[type="text"]{
+  width: 250px;
+  padding: 10px;
+  border-radius: 4px;
+  border: 1px solid #d3e27e;
+  color: #d3e27e;
+  font-size: 16px;
+}
+.submit-button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 10px;
+  background: radial-gradient(circle,white,#0cb1a370);
+  color: radial-gradient(circle,white,#0cb19b70);
+  font-family: "Trebuchet MS";
+  text-shadow: 12px 4px 12px #0e0d0d;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+  
+}
+
+.form-label {
+  font-size: 18px;
+  color: #d3e27e;
+  margin-bottom: 5px;
+  
+}
+
+.form-input {
+  width: 100%;
+  padding: 10px;
+  border-radius: 4px;
+  border: 1px solid #d3e27e;
+  background-color: #32115c;
+  color: #d3e27e;
+  font-size: 16px;
+  
+}
+
+.button {
+  display: inline-block;
+  padding: 10px 20px;
+  border-radius: 4px;
+  border: 1px solid #d3e27e;
+  background-color: #32115c;
+  color: #d3e27e;
+  font-size: 16px;
+  cursor: pointer;
+  align-items: center;
+}
+
+.submit-button:hover {
+  background: radial-gradient(circle,white,#aa8f1770);
+  color: #1774aa70;
+}
+
+

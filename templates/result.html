@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Facebook Post Link Extractor - Result</title>
+    <link rel="stylesheet" type="text/css" href="/static/styles.css">
+    <!-- <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to bottom right, white, cyan);
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+
+        p {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        a {
+            color: #007bff;
+            text-decoration: none;
+        }
+    </style> -->
+</head>
+<body>
+    <h1>Facebook Post Link Extractor - Result</h1>
+    {% if result %}
+        <p>Result: <a id="result-link" href="{{ result }}" target="_blank">{{ result }}</a></p>
+        <input class="submit-button" type="submit" value="Copy" onclick= copyResultToClipboard()>
+        
+    {% endif %}
+    <p><a href="{{index}}">Back to form</a></p>
+    <script>
+        function copyResultToClipboard() {
+            const resultLink = document.getElementById('result-link');
+            const text = resultLink.innerText;
+            
+            navigator.clipboard.writeText(text)
+                .then(() => {
+                    alert('Copied to clipboard!');
+                })
+                .catch((error) => {
+                    console.error('Unable to copy to clipboard:', error);
+                });
+        }
+    </script>
+</body>
+</html>
